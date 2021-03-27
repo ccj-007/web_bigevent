@@ -7,7 +7,7 @@ $('#btnLogout').on('click', function () {
         //do something
         // 清除本地存储的token
         localStorage.removeItem('token')
-        location.href = '/home/login.html'
+        location.href = '/login.html'
         // 转到指定登录界面
 
         layer.close(index);
@@ -33,7 +33,7 @@ function getUserInfo() {
                 // 强制清空token
                 localStorage.removeItem('token')
                 // 强制跳转登录页面
-                location.href = '/home/login.html'
+                location.href = '/login.html'
             }
         }
 
